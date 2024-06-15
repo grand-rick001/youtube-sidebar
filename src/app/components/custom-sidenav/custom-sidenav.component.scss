@@ -1,0 +1,28 @@
+.sidenav-header {
+  text-align: center;
+  padding-top: 24px;
+
+  > img {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .header-text {
+    > h3 {
+      margin: 0;
+      font-style: 1rem;
+      line-height: 1.5rem;
+    }
+
+    > p {
+      margin: 0;
+      font-size: 0.8rem;
+      //   line-height: 1.2rem;
+    }
+  }
+}

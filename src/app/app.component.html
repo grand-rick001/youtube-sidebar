@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened [style.width]="'250px'">
+    <app-custom-sidenav></app-custom-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>

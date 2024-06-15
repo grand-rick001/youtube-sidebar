@@ -1,0 +1,22 @@
+<div class="sidenav-header">
+  <img
+    src="https://avatars.githubusercontent.com/u/89421020?v=4"
+    width="100"
+    height="100"
+    alt="Profile Pic"
+  />
+  <div class="header-text">
+    <h3>Your channel</h3>
+    <p>Patrick Murimi</p>
+  </div>
+</div>
+<mat-nav-list>
+  @for (item of menuItems(); track $index) {
+  <a mat-list-item routerLink="/{{ item.route }}" routerLinkActive="active">
+    <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+    <span matListItemTitle>
+      {{ item.label }}
+    </span></a
+  >
+  }
+</mat-nav-list>

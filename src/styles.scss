@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+@include mat.core();
 
-// :root {
-//   font-size: 62.5%; // 1rem = 10px
-// }
+:root {
+  // font-size: 62.5%; // 1rem = 10px
+  --primary-color: #cc0000;
+}
 
 html,
 body {
@@ -10,5 +13,6 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
+  // font-size: 1rem;
 }

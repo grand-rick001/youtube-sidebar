@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -21,5 +21,7 @@ import { CustomSidenavComponent } from './components/custom-sidenav/custom-siden
   ],
 })
 export class AppComponent {
-  title = 'youtube-sidebar';
+  collapsed = signal(false);
+
+  sidenavWidth = computed(() => (this.collapsed() ? '65px' : '250px'));
 }
